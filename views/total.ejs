@@ -1,0 +1,19 @@
+<% include ./partials/header.ejs %>
+<div class="container">
+    <div class="form-group align-items-center stripeForm">
+        <h1>Thanks for choosing our subscription!</h1>
+        <p><%= message %></p>
+        <form method="post" action="/pay">
+            <input type="text" hidden value="<%= amount %>" name="amount">
+            <script src="https://checkout.stripe.com/checkout.js"
+            class="stripe-button"
+            data-key='pk_test_Jk6yi7sVVGUuobTmi6f5mSya'
+            data-locale="auto"
+            data-description="Example"
+            data-amount="<%= amount %>">
+            </script>
+        </form>
+    </div>
+</div>
+
+<% include ./partials/footer.ejs %>

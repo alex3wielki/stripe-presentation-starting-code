@@ -1,0 +1,13 @@
+a {
+  color: #00B7FF;
+}
+.stripeForm{
+  margin-top: 10%;
+  padding: 25px;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  border: royalblue 2px dashed;
+  border-radius: 10px;
+}
+

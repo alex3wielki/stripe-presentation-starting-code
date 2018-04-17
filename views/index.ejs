@@ -1,0 +1,21 @@
+<% include ./partials/header.ejs %>
+<div class="container">
+<div class="form-group align-items-center stripeForm">
+<h1 class="offset-4"><%= title %></h1>
+    <hr>
+<form method="post">
+    <fieldset class="form-group offset-4">
+    <label class="control-label" >Subscribe For:</label>
+    <select name="amount" id="">
+        <option value="500">A week ($5)</option>
+        <option value="1000">A month ($10)</option>
+        <option value="1500">Six months ($15)</option>
+    </select>
+    </fieldset>
+    <br>
+    <button type="submit" class="offset-4 btn btn-primary col-md-3">Please proceed </button>
+</form>
+</div>
+</div>
+
+<% include ./partials/footer.ejs %>
